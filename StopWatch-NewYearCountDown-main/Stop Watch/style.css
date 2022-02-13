@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.clock{
+  position: relative;
+}
+.clock > img {
+  width: 250px;
+}
+.clock > .needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(180deg);
+  transform-origin: top;
+  width: 5px;
+  height: 80px;
+  background-color: black;
+  border-radius: 5px;
+}
+.clock > #hours-needle {
+  height: 50px;
+}
+
+.clock > #seconds-needle {
+  width: 2px;
+}
+.container1 {
+  width: 370px;
+}
+.currentTime > span {
+  background-color: rgb(83, 82, 82);
+  font-size: 1.8em;
+}
+.time-left > .keys,
+.time-left > .values {
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+}
+
+.time-left > .keys > span {
+  font-size: 1.1em;
+}
+
+.time-left > .keys {
+  font-weight: bold;
+}
+.time-left > .values {
+  font-family: "Dancing Script", cursive;
+}
+.C1{
+  justify-content: end;
+}
+.C2{
+  justify-content: start;
+}
+@media only screen and (max-width:767px){
+  .C1,.C2{
+    justify-content: center;
+  }
+}
